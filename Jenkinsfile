@@ -10,7 +10,7 @@ pipeline {
         
         stage('Kubernetes Deployment') {
             steps {
-                withKubeConfig(caCertificate: '', clusterName: 'bb-cluster', contextName: '', credentialsId: 'k8-token', namespace: 'webapps', restrictKubeConfigAccess: false, serverUrl: 'https://DEC9982C055F2774BBB4E534B90AD5AC.sk1.us-east-1.eks.amazonaws.com') {
+                withKubeConfig(caCertificate: '', clusterName: 'bb-cluster', contextName: '', credentialsId: 'k8-token', namespace: 'webapps', restrictKubeConfigAccess: false, serverUrl: 'https://45F321C10FDC82A89B7D1575920F7677.gr7.us-east-1.eks.amazonaws.com') {
                     sh "kubectl apply -f Manifest/manifest.yaml -n webapps"
                     sh "kubectl apply -f Manifest/HPA.yaml"
                     sleep 30
