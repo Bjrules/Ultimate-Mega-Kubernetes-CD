@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: www.bbprojects.space
+    - host: www.bbproject.space
       http:
         paths:
           - path: /
@@ -22,5 +22,5 @@ spec:
                   number: 80
   tls:
     - hosts:
-        - www.bbprojects.space
-      secretName: bbprojects-space-tls
+        - www.bbproject.space
+      secretName: bbproject-space-tls
