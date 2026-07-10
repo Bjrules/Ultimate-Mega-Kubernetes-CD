@@ -7,7 +7,7 @@ metadata:
   namespace: webapps
 type: Opaque
 data:
-  MYSQL_ROOT_PASSWORD: VGVzdEAxMjM= # Base64-encoded password
+  MYSQL_ROOT_PASSWORD: VGVzdEAxMjM= # Base64-encoded password, Usage: echo "<base64-string>" | base64 -d
 ---
 # ConfigMap for MySQL
 apiVersion: v1
